@@ -31,11 +31,14 @@ const permissions = [
   { kind: Fitness.PermissionKinds.Steps, access: Fitness.PermissionAccesses.Read },
 ];
 
+const today = new Date()
 Fitness.requestPermissions(permissions).then((result) => console.log(result)).catch((error) => {
   console.log(error);
 });
 
-Fitness.getSteps({}).then((steps) => console.log(steps)).catch((error) => console.log(error))
+Fitness.getSteps({
+  startDate: today.toISOString(),
+}).then((steps) => console.log(steps)).catch((error) => console.log(error))
 Fitness.isAuthorized(permissions)
   .then((authorized) => {
     
