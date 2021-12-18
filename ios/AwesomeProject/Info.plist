@@ -49,6 +49,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>TrackUsage for us to zuck all their data</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>TrackUsagesfasfdsf for us to zuck all their data sdf</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>

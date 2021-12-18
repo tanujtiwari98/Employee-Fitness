@@ -38,6 +38,7 @@ Fitness.requestPermissions(permissions).then((result) => console.log(result)).ca
 
 Fitness.getSteps({
   startDate: today.toISOString(),
+  endDate: today.toISOString()
 }).then((steps) => console.log(steps)).catch((error) => console.log(error))
 Fitness.isAuthorized(permissions)
   .then((authorized) => {
